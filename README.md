@@ -1,69 +1,34 @@
-﻿# Central de Lineas Telefonicas
+﻿# ðŸ“ž Central de LÃ­neas TelefÃ³nicas
 
-Sistema de gestion de lineas telefonicas con ciclo de vida de llamadas y facturacion por tipo de linea.
+Sistema de gestiÃ³n de lÃ­neas telefÃ³nicas con ciclo de vida de llamadas y facturaciÃ³n por tipo de lÃ­nea.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Consola (MVC) |
-| Archivos Java | 16 |
-| Version de Java | 21 |
-| Patron | Arquitectura MVC con patron DAO |
+- GestiÃ³n de lÃ­neas telefÃ³nicas
+- Ciclo de vida de llamadas
+- FacturaciÃ³n por tipo de lÃ­nea
+- Interfaz por consola
+- Arquitectura MVC
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- Lineas locales, nacionales y corporativas
-- Apertura y cierre de llamadas
-- Calculo de duracion y costo por minuto
-- Excepcion de tipo de llamada no permitido
-- Persistencia en archivo plano con DAO
-- DataMapper entidad-DTO
+- Java
+- Maven
+- PatrÃ³n MVC
 
-## Estructura del proyecto
-
-```
-Taller/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/Taller.git
+cd Taller
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="AplMain"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.AplMain
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
